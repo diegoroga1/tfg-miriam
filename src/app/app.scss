@@ -1,5 +1,35 @@
 // http://ionicframework.com/docs/theming/
+.booking-color1{
+  background-color: #1f4b82;
 
+}
+.booking-color2{
+  background-color: #24a3db;
+}
+.tripadvisor-color1{
+  background-color: #2eb994;
+}
+.tripadvisor-color2{
+  background-color: #fbc512;
+}
+.lista-clasificacion {
+  .label{
+    font-size: 3rem;
+  }
+}
+h1,h2,h3,h5{
+  text-indent: 4px;
+
+}
+.titulo-encabezado{
+  margin-top: 10px;
+  h1,h2{
+    color:white;
+  }
+}
+.scroll-content{
+  padding: 0 !important;
+}
 
 // App Global Sass
 // --------------------------------------------------

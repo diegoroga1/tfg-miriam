@@ -1,0 +1,92 @@
+page-tripadvisor-form {
+  .lista-variables{
+    width: 100%;
+  }
+  .list{
+    float: left;
+    width: 100%;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+    h5{
+      font-size: 3rem;
+      text-indent: 20px;
+      float: left;
+      width: 100%;
+    }span{
+       display: block;
+       font-size: 2.5rem;
+       text-indent: 20px;
+     }
+  }
+  .titulo-variable{
+    float: left;
+    width: 40%;
+  }
+  .iconos-caras{
+    float:right;
+    margin-right: 2%;
+    img{
+      width:60px;
+      margin-left: 40px;
+    }
+  }
+  .cuestionario-div{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .variable-sub{
+    float: left;  }
+  .variable-en{
+    font-size: 15px;
+  }
+  .lista-variables {
+    margin-bottom: 40px;
+    float: left;
+
+    li{
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      float: left;
+      .titulo-variable{
+        float:left;
+      }
+    }
+  }
+  button{
+
+  }
+  .button-enviar{
+    margin-top: 40px;
+  }
+  .input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+
+  input[type=radio]:checked + label>img {
+    box-shadow: 0 0 3px 3px #090;
+  }
+
+  /* Stuff after this is only to make things more pretty */
+  input[type=radio] + label>img {
+    border-radius: 50%;
+    transition: 500ms all;
+  }
+
+
+  .toolbar-background{
+    background-color: #2eb994;
+
+  }
+  .toolbar-title{
+    color:white;
+  }
+  .back-button-text{
+    display: none;
+  }
+  .back-button{
+    color:white;
+  }
+
+}

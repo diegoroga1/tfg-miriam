@@ -1,0 +1,336 @@
+<!--
+  Generated template for the TripadvisorFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center="">TripAdvisor Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="submitForm()">
+    <div class="titulo-encabezado tripadvisor-color2">
+      <h1>Classification variables</h1>
+      <h2>Variables de clasificación / Klassifizierungsvariablen</h2>
+    </div>
+    <h3><strong>Reason for Travel / Motivo viaje / Reiseanlass</strong></h3>
+    <ion-list class="lista-clasificacion" radio-group [(ngModel)]="todo2.motivo" name="motivo" >
+      <ion-item>
+        <ion-label>Families / <span>Familia</span></ion-label>
+        <ion-radio value="family" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Group of Friends / <span>Grupo de amigos </span></ion-label>
+        <ion-radio value="friend"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Couples / <span>En pareja </span></ion-label>
+        <ion-radio value="couples" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Solo Travellers / <span>Solo </span></ion-label>
+        <ion-radio value="solo" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Business Travellers / <span>Viaje de negocios </span></ion-label>
+        <ion-radio value="business" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <div class="titulo-encabezado tripadvisor-color2" >
+      <h1>Questionnaire</h1>
+      <h2>Cuestionario / Fragebogen</h2>
+    </div>
+    <hr>
+    <div  class="lista-variables">
+      <ion-list name="limpieza" radio-group>
+        <div class="titulo-variable">
+          <h5 class="variable-en">Cleanliness</h5>
+          <span class="variable-sub">Limpieza</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.limpieza" value="1" name="limpieza"
+            id="limp-m-malo" class="input-hidden" />
+          <label for="limp-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.limpieza" value="2" name="limpieza"
+            id="limp-malo" class="input-hidden" />
+          <label for="limp-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.limpieza" value="3" name="limpieza"
+            id="limp-normal" class="input-hidden" />
+          <label for="limp-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.limpieza" value="4" name="limpieza"
+            id="limp-bueno" class="input-hidden" />
+          <label for="limp-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.limpieza" value="5" name="limpieza"
+            id="limp-m-bueno" class="input-hidden" />
+          <label for="limp-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+
+
+
+      </ion-list>
+      <ion-list radio-group name="sleep">
+        <div class="titulo-variable">
+          <h5 class="variable-en">Sleep Quality</h5>
+          <span class="variable-sub">Calidad del sueño</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.sleep" value="1" name="sleep"
+            id="sleep-m-malo" class="input-hidden" />
+          <label for="sleep-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.sleep" value="2" name="sleep"
+            id="sleep-malo" class="input-hidden" />
+          <label for="sleep-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.sleep" value="3" name="sleep"
+            id="sleep-normal" class="input-hidden" />
+          <label for="sleep-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.sleep" value="4" name="sleep"
+            id="sleep-bueno" class="input-hidden" />
+          <label for="sleep-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.sleep" value="5" name="sleep"
+            id="sleep-m-bueno" class="input-hidden" />
+          <label for="sleep-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+      </ion-list>
+      <ion-list name="servicio">
+        <div class="titulo-variable">
+          <h5 class="variable-en">Service</h5>
+          <span class="variable-sub">Servicio</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.servicio" value="1" name="servicio"
+            id="serv-m-malo" class="input-hidden" />
+          <label for="serv-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.servicio" value="2" name="servicio"
+            id="serv-malo" class="input-hidden" />
+          <label for="serv-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.servicio" value="3" name="servicio"
+            id="serv-normal" class="input-hidden" />
+          <label for="serv-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.servicio" value="4" name="servicio"
+            id="serv-bueno" class="input-hidden" />
+          <label for="serv-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.servicio" value="5" name="servicio"
+            id="serv-m-bueno" class="input-hidden" />
+          <label for="serv-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+      </ion-list>
+      <ion-list radio-group name="habitacion">
+        <div class="titulo-variable">
+          <h5 class="variable-en">Room</h5>
+          <span class="variable-sub">Habitación</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.habitacion" value="1" name="habitacion"
+            id="room-m-malo" class="input-hidden" />
+          <label for="room-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.habitacion" value="2" name="habitacion"
+            id="room-malo" class="input-hidden" />
+          <label for="room-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.habitacion" value="3" name="habitacion"
+            id="room-normal" class="input-hidden" />
+          <label for="room-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.habitacion" value="4" name="habitacion"
+            id="room-bueno" class="input-hidden" />
+          <label for="room-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.habitacion" value="5" name="habitacion"
+            id="room-m-bueno" class="input-hidden" />
+          <label for="room-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="titulo-variable">
+          <h5 class="variable-en">Location</h5>
+          <span class="variable-sub">Localización</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.location" value="1" name="location"
+            id="loc-m-malo" class="input-hidden" />
+          <label for="loc-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.location" value="2" name="location"
+            id="loc-malo" class="input-hidden" />
+          <label for="loc-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.location" value="3" name="location"
+            id="loc-normal" class="input-hidden" />
+          <label for="loc-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.location" value="4" name="location"
+            id="loc-bueno" class="input-hidden" />
+          <label for="loc-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.location" value="5" name="location"
+            id="loc-m-bueno" class="input-hidden" />
+          <label for="loc-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="titulo-variable">
+          <h5 class="variable-en">Value of money</h5>
+          <span class="variable-sub">Calidad-Precio</span>
+        </div>
+
+        <div class="iconos-caras">
+          <input
+            type="radio" [(ngModel)]="todo2.precio" value="1" name="precio"
+            id="precio-m-malo" class="input-hidden" />
+          <label for="precio-m-malo">
+            <img
+              src="assets/icon/muy-malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.precio" value="2" name="precio"
+            id="precio-malo" class="input-hidden" />
+          <label for="precio-malo">
+            <img
+              src="assets/icon/malo.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.precio" value="3" name="precio"
+            id="precio-normal" class="input-hidden" />
+          <label for="precio-normal">
+            <img
+              src="assets/icon/regular2.png"
+            />
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.precio" value="4" name="precio"
+            id="precio-bueno" class="input-hidden" />
+          <label for="precio-bueno">
+            <img src="assets/icon/bueno.png">
+          </label>
+          <input
+            type="radio" [(ngModel)]="todo2.precio" value="5" name="precio"
+            id="precio-m-bueno" class="input-hidden" />
+          <label for="precio-m-bueno">
+            <img src="assets/icon/muy-bueno.png">
+          </label>
+
+        </div>
+      </ion-list>
+
+    </div>
+
+    <button ion-button  class="button-enviar" type="submit" block>Enviar</button>
+  </form>
+</ion-content>
