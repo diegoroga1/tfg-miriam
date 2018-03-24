@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
+import {HomePage} from "../home/home";
 /**
  * Generated class for the TripadvisorFormPage page.
  *
@@ -27,6 +28,7 @@ export class TripadvisorFormPage {
   }
   submitForm(){
     this.af.list('/'+this.hotel+'/tripadvisor/encuestas').push(this.todo2);
+    this.navCtrl.setRoot(HomePage);
 
   }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
+import {HomePage} from "../home/home";
 /**
  * Generated class for the HolidayFormPage page.
  *
@@ -26,6 +27,7 @@ export class HolidayFormPage {
   }
   submitForm(){
     this.af.list('/'+this.hotel+'/holiday/encuestas').push(this.todo3);
+    this.navCtrl.setRoot(HomePage);
 
   }
 }

@@ -98,8 +98,10 @@ page-booking-form {
     transition: 500ms all;
   }
 
+  ion-select{
+    .item-cover{
+      height: 30px;
+    }
+  }
+}
 
-}
-.alert-wrapper{
-  transform:scale(2) !important;
-}

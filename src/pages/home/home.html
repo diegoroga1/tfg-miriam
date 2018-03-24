@@ -11,29 +11,15 @@
 
   <div>
     <ion-list class="lista-hoteles">
-      <ion-item>
+
+      <ion-item *ngFor="let hotel of hoteles">
         <ion-buttons class="ion-button ">
-          <button (click)="goForm('hotel1')" ion-button class=" ">Hotel 1 - Miriam
+          <button (click)="goForm(hotel)" text-uppercase ion-button class=" ">{{hotel}}
 
 
           </button>
         </ion-buttons>
       </ion-item>
-      <ion-item>
-        <ion-buttons class="center">
-          <button (click)="goForm('hotel2')"  ion-button  color="secondary" class=" ">Hotel 2 - Lara
-
-          </button>
-        </ion-buttons>
-      </ion-item>
-      <ion-item>
-        <ion-buttons>
-          <button (click)="goForm('hotel3')" ion-button color="dark" class=" ">Hotel 3 - Tamara
-          </button>
-        </ion-buttons>
-      </ion-item>
-
-
     </ion-list>
 
   </div>
